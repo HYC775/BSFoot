@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bsfood.mapper.FootMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.bsfood.entity.Foot">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="footname" column="footname" jdbcType="VARCHAR"/>
+            <result property="content" column="content" jdbcType="VARCHAR"/>
+            <result property="imgs" column="imgs" jdbcType="VARCHAR"/>
+            <result property="userid" column="userid" jdbcType="VARCHAR"/>
+            <result property="username" column="userName" jdbcType="VARCHAR"/>
+            <result property="datatime" column="datatime" jdbcType="VARCHAR"/>
+            <result property="daleiId" column="dalei_id" jdbcType="VARCHAR"/>
+            <result property="cailiao" column="cailiao" jdbcType="VARCHAR"/>
+            <result property="zhizuofangfa" column="zhizuofangfa" jdbcType="VARCHAR"/>
+            <result property="state" column="state" jdbcType="VARCHAR"/>
+            <result property="guid" column="guid" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,footname,content,
+        imgs,userid,userName,
+        datatime,cailiao,zhizuofangfa,
+        dalei_id,state,
+        guid
+    </sql>
+</mapper>

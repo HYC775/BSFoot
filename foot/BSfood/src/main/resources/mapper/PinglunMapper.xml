@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bsfood.mapper.PinglunMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.bsfood.entity.Pinglun">
+            <result property="id" column="id" jdbcType="INTEGER"/>
+            <result property="fid" column="fid" jdbcType="INTEGER"/>
+            <result property="neirong" column="neirong" jdbcType="VARCHAR"/>
+            <result property="username" column="username" jdbcType="VARCHAR"/>
+            <result property="userimg" column="userimg" jdbcType="VARCHAR"/>
+            <result property="parentid" column="parentid" jdbcType="INTEGER"/>
+            <result property="uid" column="uid" jdbcType="INTEGER"/>
+            <result property="createdate" column="createDate" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,neirong,username,userimg,parentid,
+        uid,createDate
+    </sql>
+</mapper>

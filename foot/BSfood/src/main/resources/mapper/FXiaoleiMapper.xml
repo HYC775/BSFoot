@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bsfood.mapper.FXiaoleiMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.bsfood.entity.FXiaolei">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="fid" column="fid" jdbcType="VARCHAR"/>
+            <result property="xiaoleiId" column="xiaolei_id" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,fid,xiaolei_id
+    </sql>
+</mapper>
